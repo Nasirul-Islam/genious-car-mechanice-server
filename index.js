@@ -61,6 +61,10 @@ run().catch(console.dir);
 
 app.get('/', (req, res) => {
     res.send('Hello World, Server is running');
+});
+
+app.get('/hello', (req, res) => {
+    res.send('hello updated here')
 })
 
 app.listen(port, () => {
